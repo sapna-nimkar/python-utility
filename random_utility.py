@@ -8,9 +8,13 @@ def randnum(length=1):
         numb = numb + str(random.randint(0,9))
     return numb
 
+def rand_mobile():
+    return "9"+randnum(9)
+
 
 if __name__ == "__main__":
     length = 9
     print(randnum(length))
     print(randnum())
+    print(rand_mobile())
 
