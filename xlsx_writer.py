@@ -28,9 +28,9 @@ def insert_info(worksheet, count = 1):
     column_num = 1
     for i in range(1,count+1):
         column_num = i + 1
-        col_name_1 = "A"+str(column_num)
+        col_name_1 = f"A{column_num}"
         col_name_2 = "B"+str(column_num)
-        col_name_3 = "C"+str(column_num)
+        col_name_3 = "C{}".format(column_num)  #you can also make a touple of all these 3
 
         worksheet.write(col_name_1,rand_name())
         worksheet.write(col_name_2,rand_name())
